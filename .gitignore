@@ -1,0 +1,17 @@
+# Ignore build directory
+# build/
+
+# Ignore executables
+*.exe
+
+# Ignore object files
+*.o
+*.obj
+
+# Ignore debug files
+*.pdb
+*.ilk
+
+# Ignore other temporary files
+*.log
+*.tmp
