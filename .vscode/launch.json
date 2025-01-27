@@ -1,0 +1,78 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+      {
+          "name": "Debug C Program x64",
+          "type": "cppvsdbg",
+          "request": "launch",
+          "program": "${workspaceFolder}/build/cl_x64/program_c_cl_x64.exe",
+          "args": [],
+          "stopAtEntry": false,
+          "cwd": "${workspaceFolder}",
+          "environment": [],
+          "externalConsole": true,
+          "preLaunchTask": "build_x64",
+          "internalConsoleOptions": "neverOpen"
+      },
+      {
+          "name": "Debug C Program x86",
+          "type": "cppvsdbg",
+          "request": "launch",
+          "program": "${workspaceFolder}/build/cl_x86/program_c_cl_x86.exe",
+          "args": [],
+          "stopAtEntry": false,
+          "cwd": "${workspaceFolder}",
+          "environment": [],
+          "externalConsole": true,
+          "preLaunchTask": "build_x86",
+          "internalConsoleOptions": "neverOpen"
+      },
+      {
+        "name": "Build Only x64",
+        "type": "cppvsdbg",
+        "request": "launch",
+        "program": "${workspaceFolder}/build/cl_x64/program_c_cl_x64.exe",
+        "args": [],
+        "stopAtEntry": false,
+        "cwd": "${workspaceFolder}",
+        "environment": [],
+        "externalConsole": true,
+        "preLaunchTask": "build_x64",
+        "internalConsoleOptions": "neverOpen"
+    },
+    {
+        "name": "Build Only x86",
+        "type": "cppvsdbg",
+        "request": "launch",
+        "program": "${workspaceFolder}/build/cl_x86/program_c_cl_x86.exe",
+        "args": [],
+        "stopAtEntry": false,
+        "cwd": "${workspaceFolder}",
+        "environment": [],
+        "externalConsole": true,
+        "preLaunchTask": "build_x86",
+        "internalConsoleOptions": "neverOpen"
+    },
+    {
+      "name": "C/C++: clang.exe build and debug active file",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${fileDirname}/${fileBasenameNoExtension}.exe",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}/code",
+      "environment": [],
+      "console": "integratedTerminal",
+      "MIMode": "gdb",
+      "miDebuggerPath": "C:/mingw64/bin/gdb.exe",
+      "setupCommands": [
+          {
+              "description": "Enable pretty-printing for gdb",
+              "text": "-enable-pretty-printing",
+              "ignoreFailures": true
+          }
+      ],
+      "preLaunchTask": "C/C++: clang.exe build active file"
+  }
+  ]
+}

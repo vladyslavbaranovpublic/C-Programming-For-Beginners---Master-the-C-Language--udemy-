@@ -1,0 +1,77 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+        "label": "build_x64",
+        "type": "shell",
+        "command": "powershell",
+        "args": [
+            "-Command",
+            "& {New-Item -ItemType Directory -Force -Path \"${workspaceFolder}/build/cl_x64\"; gcc -g \"${workspaceFolder}/code/draft_c.c\" -o \"${workspaceFolder}/build/cl_x64/program_c_cl_x64.exe\"}"
+        ],
+        "group": {
+            "kind": "build",
+            "isDefault": true
+        },
+        "problemMatcher": ["$gcc"]
+    },
+    {
+        "label": "build_x86",
+        "type": "shell",
+        "command": "powershell",
+        "args": [
+            "-Command",
+            "& {New-Item -ItemType Directory -Force -Path \"${workspaceFolder}/build/cl_x86\"; gcc -m32 -g \"${workspaceFolder}/code/draft_c.c\" -o \"${workspaceFolder}/build/cl_x86/program_c_cl_x86.exe\"}"
+        ],
+        "group": {
+            "kind": "build",
+            "isDefault": true
+        },
+        "problemMatcher": ["$gcc"]
+    },
+    {
+        "label": "build_only_x64",
+        "type": "shell",
+        "command": "powershell",
+        "args": [
+            "-Command",
+            "& {New-Item -ItemType Directory -Force -Path \"${workspaceFolder}/build/cl_x64\"; gcc -g \"${workspaceFolder}/code/draft_c.c\" -o \"${workspaceFolder}/build/cl_x64/program_c_cl_x64.exe\"}"
+        ],
+        "group": {
+            "kind": "build",
+            "isDefault": false
+        },
+        "problemMatcher": ["$gcc"]
+    },
+    {
+        "label": "build_only_x86",
+        "type": "shell",
+        "command": "powershell",
+        "args": [
+            "-Command",
+            "& {New-Item -ItemType Directory -Force -Path \"${workspaceFolder}/build/cl_x86\"; gcc -m32 -g \"${workspaceFolder}/code/draft_c.c\" -o \"${workspaceFolder}/build/cl_x86/program_c_cl_x86.exe\"}"
+        ],
+        "group": {
+            "kind": "build",
+            "isDefault": false
+        },
+        "problemMatcher": ["$gcc"]
+    },
+    {
+        "label": "C/C++: clang.exe build active file",
+        "type": "shell",
+        "command": "C:/Program Files/LLVM/bin/clang++.exe",
+        "args": [
+            "-g",
+            "${file}",
+            "-o",
+            "${fileDirname}/${fileBasenameNoExtension}.exe"
+        ],
+        "group": {
+            "kind": "build",
+            "isDefault": true
+        },
+        "problemMatcher": ["$gcc"]
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\PROJECTS\\_CODE_\\C Programming For Beginners[udemy]\\C Programming For Beginners[udemy][VS Project]\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B3137A30-E38B-4112-A48C-ECBA5C560D30}|C Programming For Beginners[udemy][VS Project].vcxproj|E:\\PROJECTS\\_CODE_\\C Programming For Beginners[udemy]\\code\\draft_c.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 139,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "draft_c.c",
+              "DocumentMoniker": "E:\\PROJECTS\\_CODE_\\C Programming For Beginners[udemy]\\code\\draft_c.c",
+              "RelativeDocumentMoniker": "..\\code\\draft_c.c",
+              "ToolTip": "E:\\PROJECTS\\_CODE_\\C Programming For Beginners[udemy]\\code\\draft_c.c*",
+              "RelativeToolTip": "..\\code\\draft_c.c*",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwgAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-01-26T21:51:16.323Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
